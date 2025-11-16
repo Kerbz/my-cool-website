@@ -1,207 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test - Your Trusted Local Services in Utrecht</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <title>My HTML document</title>
 </head>
-<body class="font-sans antialiased text-gray-800 bg-white">
+<body>
+  <div class="container">
+    Op zoek naar inspiratie voor het inrichten en decoreren van je huis? Of wil je praktische tips om je woning gezelliger en stijlvoller te maken? Dan ben je op de juiste pagina beland! In dit artikel delen we handige adviezen en ideeën voor het creëren van een warme en uitnodigende sfeer in jouw huis. Of je nu een oude boerderij, een modern appartement of een knusse studio hebt, met onze tips kun je jouw huis omtoveren tot een plek waar je je echt thuis voelt.
 
-    <!-- Navigation Bar -->
-    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-3xl font-extrabold text-blue-700">test</a>
+Een goed begin is het halve werk en dat geldt ook voor het inrichten van je woning. Voordat je aan de slag gaat, is het handig om een moodboard te maken of een Pinterest-bord aan te maken waarop je al je inspiratie kunt verzamelen. Zo krijg je een duidelijk beeld van wat je mooi vindt en welke stijl je wilt creëren in je huis.
 
-            <!-- Mobile menu button -->
-            <div class="md:hidden">
-                <button id="menu-button" class="text-gray-800 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
+Als het om de inrichting van je huis gaat, is het belangrijk om te kiezen voor meubels en accessoires die passen bij jouw persoonlijke stijl. Denk hierbij aan de juiste kleuren, materialen en vormen die aansluiten bij de rest van je interieur. Wil je een warme en gezellige sfeer creëren, kies dan voor zachte stoffen, warme kleuren en natuurlijke materialen zoals hout en wol.
 
-            <!-- Desktop menu -->
-            <div id="nav-menu" class="hidden md:flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 items-center w-full md:w-auto">
-                <a href="#services" class="text-lg font-medium text-gray-800 hover:text-blue-700 transition duration-300 py-2 md:py-0">Services</a>
-                <a href="#about" class="text-lg font-medium text-gray-800 hover:text-blue-700 transition duration-300 py-2 md:py-0">About Us</a>
-                <a href="#contact" class="text-lg font-medium text-gray-800 hover:text-blue-700 transition duration-300 py-2 md:py-0">Contact</a>
-                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full text-lg mt-4 md:mt-0 md:ml-4 transition duration-300">Get a Quote</a>
-            </div>
-        </div>
-    </nav>
+Verlichting is ook een essentieel onderdeel van een sfeervol interieur. Zorg voor een goede balans tussen functionele verlichting en sfeerverlichting. Plaats bijvoorbeeld een mix van plafondlampen, vloerlampen en tafellampen om verschillende sferen te creëren in je huis. Kaarsen en dimbare lampen kunnen ook zorgen voor een warme en intieme sfeer.
 
-    <!-- JavaScript for Mobile Menu Toggle -->
-    <script>
-        document.getElementById('menu-button').onclick = function() {
-            const navMenu = document.getElementById('nav-menu');
-            navMenu.classList.toggle('hidden');
-            navMenu.classList.toggle('flex');
-            navMenu.classList.toggle('flex-col');
-        };
-        document.querySelectorAll('#nav-menu a').forEach(item => {
-            item.addEventListener('click', () => {
-                const navMenu = document.getElementById('nav-menu');
-                if (!navMenu.classList.contains('hidden')) {
-                    navMenu.classList.add('hidden');
-                    navMenu.classList.remove('flex', 'flex-col');
-                }
-            });
-        });
-    </script>
+Naast de inrichting is het ook belangrijk om aandacht te besteden aan de indeling van je huis. Zorg ervoor dat de ruimtes logisch en praktisch zijn ingericht, zodat je optimaal gebruik kunt maken van de beschikbare ruimte. Maak gebruik van slimme opbergoplossingen en kies voor multifunctionele meubels om ruimte te besparen.
 
-    <!-- Hero Section -->
-    <section id="home" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center bg-[url('https://picsum.photos/seed/test-hero/1920/1080?blur=2')]">
-        <div class="absolute inset-0 bg-gray-900 opacity-60"></div>
-        <div class="relative z-10 px-4 max-w-4xl">
-            <h1 class="text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6">
-                Your Trusted Partner for Home & Business Solutions in Utrecht
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-200 mb-10 leading-relaxed">
-                From expert repairs to complete renovations, <span class="font-semibold text-blue-500">test</span> delivers quality craftsmanship and reliable service right to your doorstep in Utrecht and surrounding areas.
-            </p>
-            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full text-xl uppercase tracking-wide shadow-lg transform hover:scale-105 transition duration-300">
-                Get a Free Quote
-            </a>
-        </div>
-    </section>
+Tenslotte mag een persoonlijke touch niet ontbreken in je interieur. Decoreer je huis met persoonlijke spullen, zoals foto's, souvenirs en kunstwerken die iets over jou vertellen. Zo voelt je huis echt als een plek waar jij je thuis kunt voelen.
 
-    <!-- Our Services Section -->
-    <section id="services" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-                <!-- Service 1 -->
-                <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition duration-300">
-                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Home Renovations</h3>
-                    <p class="text-gray-600">Transform your living space with our comprehensive renovation services, from kitchens to full home makeovers. We bring your vision to life.</p>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition duration-300">
-                    <div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">General Repairs & Maintenance</h3>
-                    <p class="text-gray-600">Keep your property in top condition with our reliable repair and maintenance solutions, tackling everything from minor fixes to major issues.</p>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition duration-300">
-                    <div class="w-16 h-16 bg-blue-700 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Installations & Upgrades</h3>
-                    <p class="text-gray-600">Professional installation of fixtures, appliances, and smart home systems. Upgrade your comfort and efficiency with our expert touch.</p>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition duration-300">
-                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12V4a2 2 0 10-4 0v8m4 0l-4 4m4-4H4m0 0l-4 4"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Outdoor & Landscaping</h3>
-                    <p class="text-gray-600">Enhance your curb appeal with our outdoor services, including garden maintenance, fence repairs, decking, and minor landscaping projects.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
-            <div class="lg:w-1/2">
-                <img src="https://picsum.photos/seed/test-about/800/600" alt="About test team" class="rounded-lg shadow-xl w-full h-auto object-cover transform hover:scale-105 transition duration-300">
-            </div>
-            <div class="lg:w-1/2 text-center lg:text-left">
-                <h2 class="text-4xl font-bold text-gray-800 mb-6">About <span class="text-blue-600">test</span></h2>
-                <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                    At <span class="font-semibold text-blue-600">test</span>, we believe in delivering exceptional quality and reliability with every project. Founded with a passion for craftsmanship and a commitment to customer satisfaction, we've grown to be a trusted name for property owners in Utrecht.
-                </p>
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    Our team of experienced professionals is dedicated to serving the Utrecht community, ensuring every task, big or small, is completed with precision and care. We pride ourselves on transparent communication, fair pricing, and results that exceed expectations. Choose <span class="font-semibold text-blue-600">test</span> for a partner you can truly rely on.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Us Section -->
-    <section id="contact" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Get in Touch</h2>
-
-            <div class="flex flex-col lg:flex-row gap-12">
-                <div class="lg:w-1/2 bg-white rounded-lg shadow-lg p-8 flex flex-col justify-center items-center text-center">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-center space-x-3 text-lg text-gray-700">
-                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684L10.5 9.5l1.5-1.5 4.5 4.5-1.5 1.5 4.5 4.5a1 1 0 01.684.948V19a2 2 0 01-2 2h-4.5a1 1 0 01-.79-.407l-2.19-2.19a1 1 0 01-.154-1.043l1.838-3.064a1 1 0 011.054-.424l3.064 1.838a1 1 0 011.043-.154l2.19-2.19a1 1 0 01.407-.79H5z"></path>
-                            </svg>
-                            <span>+31 6 1234 5678</span>
-                        </div>
-                        <div class="flex items-center justify-center space-x-3 text-lg text-gray-700">
-                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-1 5v4a2 2 0 01-2 2H6a2 2 0 01-2-2v-4"></path>
-                            </svg>
-                            <span>info@test.nl</span>
-                        </div>
-                        <div class="flex items-center justify-center space-x-3 text-lg text-gray-700">
-                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                            <span>Utrecht, Netherlands</span>
-                        </div>
-                    </div>
-                    <img src="https://picsum.photos/seed/test-contact-info/400/300" alt="Contact Us image" class="mt-8 rounded-lg shadow-md w-full max-w-xs object-cover">
-                </div>
-
-                <div class="lg:w-1/2 bg-white rounded-lg shadow-lg p-8">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Send Us a Message</h3>
-                    <form class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
-                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition duration-300" placeholder="Your Name">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
-                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition duration-300" placeholder="your@email.com">
-                        </div>
-                        <div>
-                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
-                            <textarea id="message" name="message" rows="6" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition duration-300" placeholder="How can we help you?"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-full text-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-8 bg-gray-900 text-white text-center">
-        <div class="container mx-auto px-4">
-            <p class="text-lg">&copy; <script>document.write(new Date().getFullYear())</script> <span class="font-semibold text-blue-600">test</span>. All rights reserved.</p>
-            <p class="text-sm mt-2 text-gray-400">Serving Utrecht with pride and professionalism.</p>
-        </div>
-    </footer>
-
+Hopelijk hebben deze tips je geïnspireerd om aan de slag te gaan met het creëren van een warme en uitnodigende sfeer in jouw huis. Met wat creativiteit en aandacht voor detail kun je van je huis een echt thuis maken waar je met plezier kunt vertoeven. Veel succes en plezier met het inrichten van je huis!
+  </div>
 </body>
 </html>
+
+<style>
+.container {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+h1 {
+  color: #ff6d5a;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+h2 {
+  color: #909399;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+}
+</style>
+
+<script>
+console.log("Hello World!");
+</script>
